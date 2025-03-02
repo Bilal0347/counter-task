@@ -1,4 +1,4 @@
-import Counter from "./components/Counter";
+import Counter from "./components/counter/Counter";
 import { CounterProvider } from "./context/CounterContext";
 import { ChakraProvider } from "@chakra-ui/react";
 
