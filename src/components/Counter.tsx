@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useCounter } from "../context/useCounter";
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const { count, increment } = useCounter();
   return (
     <div
       style={{
@@ -16,7 +16,7 @@ const Counter = () => {
     >
       <h2>Current count {count}</h2>
       <button
-        onClick={() => setCount(count + 1)}
+        onClick={increment}
         style={{
           padding: "10px",
           fontSize: "15px",
