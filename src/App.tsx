@@ -1,11 +1,14 @@
 import Counter from "./components/Counter";
 import { CounterProvider } from "./context/CounterContext";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <CounterProvider>
-      <Counter />
-    </CounterProvider>
+    <ChakraProvider>
+      <CounterProvider>
+        <Counter />
+      </CounterProvider>
+    </ChakraProvider>
   );
 }
 
